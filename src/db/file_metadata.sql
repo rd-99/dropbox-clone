@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS file_metadata (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  fileName VARCHAR(255) NOT NULL,
+  fileType VARCHAR(50) NOT NULL,
+  filePath VARCHAR(255) NOT NULL,
+  uploadDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
